@@ -1,13 +1,18 @@
 class GarmentsController < ApplicationController
   def index
+    @garments = Garment.all
   end
 
   def show
-  end
-
-  def edit
+    @garments = garment.find(params[:id])
   end
 
   def new
+
   end
+
+  def edit
+
+  end
+
 end
